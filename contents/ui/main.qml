@@ -18,12 +18,11 @@
  */
 
 import QtQuick 2.13
-import QtWebView 1.13
+import QtWebEngine 1.9
 
 Item {
-    id: root
-    WebView{
-        url: wallpaper.configuration.DisplayPage
+    WebEngineView{
         anchors.fill: parent
+        url: wallpaper.configuration.DisplayPage
     }
 }
