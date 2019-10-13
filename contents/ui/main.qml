@@ -17,10 +17,7 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-import QtQuick 2.1
-
-import org.kde.plasma.core 2.0
-import org.kde.plasma.extras 2.0 as PlasmaExtras
+import QtQuick 2.13
 import QtWebView 1.13
 
 Item {

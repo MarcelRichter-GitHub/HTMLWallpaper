@@ -17,13 +17,9 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-import QtQuick 2.1
-import QtQuick.Layouts 1.0
-import QtQuick.Controls 1.0 as QtControls
-
-// for "units"
-import org.kde.plasma.core 2.0 as PlasmaCore
-
+import QtQuick 2.13
+import QtQuick.Layouts 1.13
+import QtQuick.Controls 2.13
 
 ColumnLayout {
     id: root
@@ -35,7 +31,7 @@ ColumnLayout {
         // To allow aligned integration in the settings form,
         // "formAlignment" is a property injected by the config containment
         // which defines the offset of the value fields
-        QtControls.Label {
+        Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
             width: formAlignment - units.largeSpacing
@@ -44,7 +40,7 @@ ColumnLayout {
             // use i18nd in config QML, as the default textdomain is set to that of the config container
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "URL:")
         }
-        QtControls.TextField {
+        TextField {
             id: textField
             Layout.fillWidth: true
         }
@@ -53,7 +49,7 @@ ColumnLayout {
     RowLayout {
         spacing: units.largeSpacing / 2
 
-        QtControls.Label {
+        Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
             width: formAlignment - units.largeSpacing
@@ -61,7 +57,7 @@ ColumnLayout {
 
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "Web:")
         }
-        QtControls.Label {
+        Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
             width: formAlignment - units.largeSpacing
@@ -74,7 +70,7 @@ ColumnLayout {
     RowLayout {
         spacing: units.largeSpacing / 2
 
-        QtControls.Label {
+        Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
             width: formAlignment - units.largeSpacing
@@ -82,7 +78,7 @@ ColumnLayout {
 
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "Local:")
         }
-        QtControls.Label {
+        Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
             width: formAlignment - units.largeSpacing
