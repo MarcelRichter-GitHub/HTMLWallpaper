@@ -21,28 +21,27 @@ import QtQuick 2.13
 import QtQuick.Layouts 1.13
 import QtQuick.Controls 2.13
 
+
 ColumnLayout {
-    id: root
-    property alias cfg_DisplayPage: textField.text
+    property alias cfg_DisplayPage: displayPageField.text
+    property alias cfg_ZoomFactor: zoomFactorSlider.value
 
     RowLayout {
         spacing: units.largeSpacing / 2
 
-        // To allow aligned integration in the settings form,
-        // "formAlignment" is a property injected by the config containment
-        // which defines the offset of the value fields
-        Label {
+       Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
             width: formAlignment - units.largeSpacing
             horizontalAlignment: Text.AlignRight
 
-            // use i18nd in config QML, as the default textdomain is set to that of the config container
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "URL:")
         }
         TextField {
-            id: textField
-            Layout.fillWidth: true
+            id: displayPageField
+            Layout.minimumWidth: width
+            Layout.maximumWidth: width
+            width: formAlignment - units.largeSpacing
         }
     }
     
@@ -87,8 +86,47 @@ ColumnLayout {
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", " file:///absolute/path/to/your/website.html")
         }
     }
+        
+    RowLayout {
+        spacing: units.largeSpacing / 2
 
-    Item { // tighten layout
+        Label {
+            Layout.minimumWidth: width
+            Layout.maximumWidth: width
+            width: formAlignment - units.largeSpacing
+            horizontalAlignment: Text.AlignRight
+
+            text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "Zoom:")
+        }
+        Slider{
+            id: zoomFactorSlider
+            from: 0.5
+            to: 3.0
+            stepSize: 0.5
+            snapMode: Slider.SnapAlways
+        }
+    }
+    
+    RowLayout {
+        spacing: units.largeSpacing / 2
+
+        Label {
+            Layout.minimumWidth: width
+            Layout.maximumWidth: width
+            width: formAlignment - units.largeSpacing
+            horizontalAlignment: Text.AlignRight
+        }
+        Label {
+            Layout.minimumWidth: width
+            Layout.maximumWidth: width
+            width: formAlignment - units.largeSpacing
+            horizontalAlignment: Text.AlignLeft
+
+            text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "0.5        1        1.5        2        2.5        3")
+        }
+    }
+
+    Item {
         Layout.fillHeight: true
     }
 }

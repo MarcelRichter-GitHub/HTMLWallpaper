@@ -10,6 +10,10 @@
       <label>Page to display</label>
       <default>https://kde.org/</default>
     </entry>
+    <entry name="ZoomFactor" type="Double">
+      <label>Factor to zoom content</label>
+      <default>1.0</default>
+    </entry>
   </group>
 
 </kcfg>

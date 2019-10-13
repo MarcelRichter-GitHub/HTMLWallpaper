@@ -24,5 +24,6 @@ Item {
     WebEngineView{
         anchors.fill: parent
         url: wallpaper.configuration.DisplayPage
+        zoomFactor: wallpaper.configuration.ZoomFactor
     }
 }
