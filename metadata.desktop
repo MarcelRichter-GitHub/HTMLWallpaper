@@ -48,5 +48,5 @@ X-KDE-PluginInfo-Author=Marcel Richter
 X-KDE-PluginInfo-Email=Marcel-Richter-02@protonmail.com
 X-KDE-PluginInfo-Name=de.unkn0wn.htmlwallpaper
 X-KDE-PluginInfo-License=LGPLv2+
-X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Version=2.0
 X-Plasma-MainScript=ui/main.qml
