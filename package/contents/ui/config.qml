@@ -27,6 +27,7 @@ ColumnLayout {
     property alias cfg_ZoomFactor: zoomFactorSlider.value
 
     RowLayout {
+        Layout.topMargin: units.smallSpacing
         spacing: units.largeSpacing / 2
 
        Label {
@@ -41,7 +42,7 @@ ColumnLayout {
             id: displayPageField
             Layout.minimumWidth: width
             Layout.maximumWidth: width
-            width: formAlignment - units.largeSpacing
+            width: 435
         }
     }
     
@@ -122,7 +123,7 @@ ColumnLayout {
             width: formAlignment - units.largeSpacing
             horizontalAlignment: Text.AlignLeft
 
-            text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "0.5        1        1.5        2        2.5        3")
+            text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "0.5       1       1.5        2       2.5       3")
         }
     }
 
