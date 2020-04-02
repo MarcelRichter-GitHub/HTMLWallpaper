@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 by Marcel Richter <Marcel-Richter-02@protonmail.com>
+ * Copyright (C) 2020 by Marcel Richter <Richter02@protonmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU Library General Public License as
