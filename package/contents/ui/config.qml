@@ -25,12 +25,13 @@ import QtQuick.Controls 2
 ColumnLayout {
     property alias cfg_DisplayPage: displayPageField.text
     property alias cfg_ZoomFactor: zoomFactorSlider.value
+    property alias cfg_EnableInputFocus: enableInputFocusCheckBox.checked
 
     RowLayout {
         Layout.topMargin: units.smallSpacing
         spacing: units.largeSpacing / 2
 
-       Label {
+        Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
             width: formAlignment - units.largeSpacing
@@ -45,7 +46,7 @@ ColumnLayout {
             width: 435
         }
     }
-    
+
     RowLayout {
         spacing: units.largeSpacing / 2
 
@@ -66,7 +67,7 @@ ColumnLayout {
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", " https://yourwebsite.com")
         }
     }
-    
+
     RowLayout {
         spacing: units.largeSpacing / 2
 
@@ -107,7 +108,7 @@ ColumnLayout {
             snapMode: Slider.SnapAlways
         }
     }
-    
+
     RowLayout {
         spacing: units.largeSpacing / 2
 
@@ -125,6 +126,31 @@ ColumnLayout {
 
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "0.5       1       1.5        2       2.5       3")
         }
+    }
+
+    RowLayout {
+        spacing: units.largeSpacing / 2
+
+        Label {
+            Layout.minimumWidth: width
+            Layout.maximumWidth: width
+            width: formAlignment - units.largeSpacing
+            horizontalAlignment: Text.AlignRight
+
+            text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "Enable Input Focus")
+        }
+        CheckBox {
+            id: enableInputFocusCheckBox
+
+            ToolTip {
+                text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "You should enable this when using desktop view layout")
+                visible: parent.hovered
+            }
+        }
+    }
+
+    RowLayout {
+        spacing: units.largeSpacing / 2
     }
 
     Item {

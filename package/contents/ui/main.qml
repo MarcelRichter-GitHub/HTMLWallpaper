@@ -18,12 +18,13 @@
  */
 
 import QtQuick 2
-import QtWebEngine 1.1
+import QtWebEngine 1.2
 
 Item {
     WebEngineView{
         anchors.fill: parent
         url: wallpaper.configuration.DisplayPage
         zoomFactor: wallpaper.configuration.ZoomFactor
+        activeFocusOnPress: wallpaper.configuration.EnableInputFocus
     }
 }
