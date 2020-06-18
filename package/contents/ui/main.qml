@@ -17,8 +17,8 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-import QtQuick 2.14
-import QtWebEngine 1.10
+import QtQuick 2
+import QtWebEngine 1.1
 
 Item {
     WebEngineView{
