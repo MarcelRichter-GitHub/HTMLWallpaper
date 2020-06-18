@@ -137,7 +137,7 @@ ColumnLayout {
             width: formAlignment - units.largeSpacing
             horizontalAlignment: Text.AlignRight
 
-            text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "Enable Input Focus")
+            text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "Enable Input Focus:")
         }
         CheckBox {
             id: enableInputFocusCheckBox
