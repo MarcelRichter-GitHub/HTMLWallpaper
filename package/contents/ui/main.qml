@@ -18,7 +18,7 @@
  */
 
 import QtQuick 2
-import QtWebEngine 1.2
+import QtWebEngine 1.7
 
 Item {
     WebEngineView{
@@ -26,5 +26,6 @@ Item {
         url: wallpaper.configuration.DisplayPage
         zoomFactor: wallpaper.configuration.ZoomFactor
         activeFocusOnPress: wallpaper.configuration.EnableInputFocus
+        settings.playbackRequiresUserGesture: false
     }
 }
