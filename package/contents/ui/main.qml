@@ -27,6 +27,13 @@ WallpaperItem {
         anchors.fill: parent
         url: wallpaper.configuration.DisplayPage
         zoomFactor: wallpaper.configuration.ZoomFactor
+        onCertificateError: function (error) {
+            if (wallpaper.configuration.InsecureHTTPS) {
+                error.acceptCertificate()
+            } else {
+                error.rejectCertificate()
+            }
+        }
         settings.playbackRequiresUserGesture: false
     }
 }

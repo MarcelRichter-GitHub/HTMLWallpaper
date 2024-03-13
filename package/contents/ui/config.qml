@@ -25,6 +25,7 @@ import QtQuick.Controls 2
 ColumnLayout {
     property alias cfg_DisplayPage: displayPageField.text
     property alias cfg_ZoomFactor: zoomFactorSlider.value
+    property alias cfg_InsecureHTTPS: insecureHTTPSCheckBox.checked
 
     RowLayout {
         Layout.topMargin: 10
@@ -124,6 +125,27 @@ ColumnLayout {
             horizontalAlignment: Text.AlignLeft
 
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "0.5       1       1.5        2       2.5       3")
+        }
+    }
+
+    RowLayout {
+        spacing: 10
+
+        Label {
+            Layout.minimumWidth: width
+            Layout.maximumWidth: width
+            width: formAlignment - 20
+            horizontalAlignment: Text.AlignRight
+
+            text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "Insecure HTTPS")
+        }
+        CheckBox {
+            id: insecureHTTPSCheckBox
+
+            ToolTip {
+                text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "Ignore HTTPS errors")
+                visible: parent.hovered
+            }
         }
     }
 

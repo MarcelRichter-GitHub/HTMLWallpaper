@@ -14,6 +14,10 @@
       <label>Factor to zoom content</label>
       <default>1.0</default>
     </entry>
+    <entry name="InsecureHTTPS" type="Bool">
+      <label>Ignore HTTPS errors</label>
+      <default>false</default>
+    </entry>
   </group>
 
 </kcfg>
