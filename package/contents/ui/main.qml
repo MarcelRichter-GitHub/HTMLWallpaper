@@ -20,12 +20,13 @@
 import QtQuick 2
 import QtWebEngine 1.7
 
-Item {
+import org.kde.plasma.plasmoid
+
+WallpaperItem {
     WebEngineView{
         anchors.fill: parent
         url: wallpaper.configuration.DisplayPage
         zoomFactor: wallpaper.configuration.ZoomFactor
-        activeFocusOnPress: wallpaper.configuration.EnableInputFocus
         settings.playbackRequiresUserGesture: false
     }
 }

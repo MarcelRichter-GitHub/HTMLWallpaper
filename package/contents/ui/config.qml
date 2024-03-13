@@ -25,11 +25,10 @@ import QtQuick.Controls 2
 ColumnLayout {
     property alias cfg_DisplayPage: displayPageField.text
     property alias cfg_ZoomFactor: zoomFactorSlider.value
-    property alias cfg_EnableInputFocus: enableInputFocusCheckBox.checked
 
     RowLayout {
-        Layout.topMargin: units.smallSpacing
-        spacing: units.largeSpacing / 2
+        Layout.topMargin: 10
+        spacing: 10
 
         Label {
             Layout.minimumWidth: width
@@ -48,12 +47,12 @@ ColumnLayout {
     }
 
     RowLayout {
-        spacing: units.largeSpacing / 2
+        spacing: 10
 
         Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
-            width: formAlignment - units.largeSpacing
+            width: formAlignment - 20
             horizontalAlignment: Text.AlignRight
 
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "Web:")
@@ -61,7 +60,7 @@ ColumnLayout {
         Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
-            width: formAlignment - units.largeSpacing
+            width: formAlignment - 20
             horizontalAlignment: Text.AlignLeft
 
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", " https://yourwebsite.com")
@@ -69,12 +68,12 @@ ColumnLayout {
     }
 
     RowLayout {
-        spacing: units.largeSpacing / 2
+        spacing: 10
 
         Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
-            width: formAlignment - units.largeSpacing
+            width: formAlignment - 20
             horizontalAlignment: Text.AlignRight
 
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "Local:")
@@ -82,7 +81,7 @@ ColumnLayout {
         Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
-            width: formAlignment - units.largeSpacing
+            width: formAlignment - 20
             horizontalAlignment: Text.AlignLeft
 
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", " file:///absolute/path/to/your/website.html")
@@ -90,12 +89,12 @@ ColumnLayout {
     }
         
     RowLayout {
-        spacing: units.largeSpacing / 2
+        spacing: 10
 
         Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
-            width: formAlignment - units.largeSpacing
+            width: formAlignment - 20
             horizontalAlignment: Text.AlignRight
 
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "Zoom:")
@@ -110,47 +109,22 @@ ColumnLayout {
     }
 
     RowLayout {
-        spacing: units.largeSpacing / 2
+        spacing: 10
 
         Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
-            width: formAlignment - units.largeSpacing
+            width: formAlignment - 20
             horizontalAlignment: Text.AlignRight
         }
         Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
-            width: formAlignment - units.largeSpacing
+            width: formAlignment - 20
             horizontalAlignment: Text.AlignLeft
 
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "0.5       1       1.5        2       2.5       3")
         }
-    }
-
-    RowLayout {
-        spacing: units.largeSpacing / 2
-
-        Label {
-            Layout.minimumWidth: width
-            Layout.maximumWidth: width
-            width: formAlignment - units.largeSpacing
-            horizontalAlignment: Text.AlignRight
-
-            text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "Enable Input Focus:")
-        }
-        CheckBox {
-            id: enableInputFocusCheckBox
-
-            ToolTip {
-                text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "You should enable this when using desktop view layout")
-                visible: parent.hovered
-            }
-        }
-    }
-
-    RowLayout {
-        spacing: units.largeSpacing / 2
     }
 
     Item {

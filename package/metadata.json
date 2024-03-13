@@ -1,0 +1,20 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "MarcelRichter101@gmail.com",
+                "Name": "Marcel Richter"
+            }
+        ],
+        "Description": "Allows you to have a HTML page as your KDE Plasma wallpaper",
+        "Icon": "preferences-desktop-wallpaper",
+        "Id": "de.unkn0wn.htmlwallpaper",
+        "License": "LGPLv2+",
+        "Name": "HTML Wallpaper",
+        "Website": "https://github.com/Marcel1202/HTMLWallpaper/"
+    },
+    "Keywords": "html;wallpaper;web",
+    "X-KDE-ParentApp": "org.kde.plasmashell",
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "KPackageStructure": "Plasma/Wallpaper"
+}

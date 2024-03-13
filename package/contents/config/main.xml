@@ -14,10 +14,6 @@
       <label>Factor to zoom content</label>
       <default>1.0</default>
     </entry>
-    <entry name="EnableInputFocus" type="Bool">
-      <label>Enables the plugin to handle mouse input</label>
-      <default>false</default>
-    </entry>
   </group>
 
 </kcfg>
