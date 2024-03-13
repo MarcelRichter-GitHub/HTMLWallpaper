@@ -42,7 +42,7 @@ ColumnLayout {
             id: displayPageField
             Layout.minimumWidth: width
             Layout.maximumWidth: width
-            width: 435
+            width: 320
         }
     }
 
