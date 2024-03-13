@@ -33,7 +33,7 @@ ColumnLayout {
         Label {
             Layout.minimumWidth: width
             Layout.maximumWidth: width
-            width: formAlignment - units.largeSpacing
+            width: formAlignment - 20
             horizontalAlignment: Text.AlignRight
 
             text: i18nd("plasma_wallpaper_de.unkn0wn.htmlwallpaper", "URL:")
