@@ -27,6 +27,7 @@ WallpaperItem {
         anchors.fill: parent
         url: wallpaper.configuration.DisplayPage
         zoomFactor: wallpaper.configuration.ZoomFactor
+        backgroundColor: "black"
         onCertificateError: function (error) {
             if (wallpaper.configuration.InsecureHTTPS) {
                 error.acceptCertificate()
